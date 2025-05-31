@@ -1,0 +1,653 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+% Page layout
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{Page \thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% Modified Question command with left-aligned number
+\newcommand{\questiona}[2]{
+    \noindent\textbf{Q#2.} #1 \hfill \textbf{[1 Mark]}
+}
+
+\newcommand{\questionb}[2]{
+    \noindent\textbf{Q#2.} #1 \hfill \textbf{[2 Marks]}
+}
+
+\begin{document}
+
+% Title section with horizontal line
+\begin{center}
+    \Large\textbf{GATE 2017 - Aerospace Engineering (ECE)} \\
+    \large\textbf{General Aptitude and Technical Questions} \\
+    \rule{\textwidth}{0.5pt} % Horizontal line below heading
+\end{center}
+
+\vspace{0.5cm}
+
+% General Aptitude Section
+\section*{General Aptitude}
+
+\questiona{The ninth and the tenth of this month are Monday and Tuesday \_\_\_\_\_.}{1}
+\begin{enumerate}
+    \item[(A)] figuratively  
+    \item[(B)] retrospectively  
+    \item[(C)] respectively  
+    \item[(D)] rightfully  
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{It is \_\_\_\_\_ to read this year's textbook \_\_\_\_\_ the last year's.}{2}
+\begin{enumerate}
+    \item[(A)] easier, than  
+    \item[(B)] most easy, than  
+    \item[(C)] easier, from  
+    \item[(D)] easiest, from  
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{A rule states that in order to drink beer, one must be over 18 years old. In a bar, there are 4 people. P is 16 years old, Q is 25 years old, R is drinking milkshake and S is drinking a beer. What must be checked to ensure that the rule is being followed?}{3}
+\begin{enumerate}
+    \item[(A)] Only P's drink  
+    \item[(B)] Only P's drink and S's age  
+    \item[(C)] Only S's age  
+    \item[(D)] Only P's drink, Q's drink and S's age  
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{Fatima starts from point P, goes North for 3 km, and then East for 4 km to reach point Q. She then turns to face point P and goes 15 km in that direction. She then goes North for 6 km. How far is she from point P, and in which direction should she go to reach point P?}{4}
+\begin{enumerate}
+    \item[(A)] 8 km, East  
+    \item[(B)] 12 km, North  
+    \item[(C)] 6 km, East  
+    \item[(D)] 10 km, North  
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{500 students are taking one or more courses out of Chemistry, Physics, and Mathematics. Registration records indicate course enrolment as follows: Chemistry (329), Physics (186), Mathematics (295), Chemistry and Physics (83), Chemistry and Mathematics (217), and Physics and Mathematics (63). How many students are taking all 3 subjects?}{5}
+\begin{enumerate}
+    \item[(A)] 37  
+    \item[(B)] 43  
+    \item[(C)] 47  
+    \item[(D)] 53  
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questionb{"If you are looking for a history of India, or for an account of the rise and fall of the British Raj, or for the reason of the cleaving of the subcontinent into two mutually antagonistic parts and the effects this mutilation will have in the respective sections, and ultimately on Asia, you will not find it in these pages; for though I have spent a lifetime in the country, I lived too near the seat of events, and was too intimately associated with the actors, to get the perspective needed for the impartial recording of these matters."
+
+Which of the following statements best reflects the author's opinion?}{6}
+\begin{enumerate}
+    \item[(A)] An intimate association does not allow for the necessary perspective.
+    \item[(B)] Matters are recorded with an impartial perspective.
+    \item[(C)] An intimate association offers an impartial perspective.
+    \item[(D)] Actors are typically associated with the impartial recording of matters.
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questionb{Each of P, Q, R, S, W, X, Y and Z has been married at most once. X and Y are married and have two children P and Q. Z is the grandfather of the daughter S of P. Further, Z and W are married and are parents of R. Which one of the following must necessarily be FALSE?}{7}
+\begin{enumerate}
+    \item[(A)] X is the mother-in-law of R
+    \item[(B)] P and R are not married to each other
+    \item[(C)] P is a son of X and Y
+    \item[(D)] Q cannot be married to R
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questionb{1200 men and 500 women can build a bridge in 2 weeks. 900 men and 250 women will take 3 weeks to build the same bridge. How many men will be needed to build the bridge in one week?}{8}
+\begin{enumerate}
+    \item[(A)] 3000
+    \item[(B)] 3300
+    \item[(C)] 3600
+    \item[(D)] 3900
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questionb{The number of 3-digit numbers such that the digit 1 is never to the immediate right of 2 is}{9}
+\begin{enumerate}
+    \item[(A)] 781
+    \item[(B)] 791
+    \item[(C)] 881
+    \item[(D)] 891
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questionb{A contour line joins locations having the same height above the mean sea level. The following is a contour plot of a geographical region. Contour lines are shown at 25 m intervals in this plot.
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/10.png}
+\end{center}
+
+Which of the following is the steepest path leaving from P?}{10}
+\begin{enumerate}
+    \item[(A)] P to Q
+    \item[(B)] P to R
+    \item[(C)] P to S
+    \item[(D)] P to T
+\end{enumerate}
+
+\vspace{0.5cm}
+
+% Technical Section
+\section*{Technical Section}
+
+% Technical Section
+\section*{Technical Section}
+
+\questiona{Given the vectors \(\overrightarrow{v_1} = \hat{i} + 3\hat{j}\), \(\overrightarrow{v_2} = 2\hat{i} - 4\hat{j} + 3\hat{k}\), the vector \(\overrightarrow{v_3}\) that is perpendicular to both \(\overrightarrow{v_1}\) and \(\overrightarrow{v_2}\) is given by:}{1}
+\begin{enumerate}
+    \item[(A)] \(\overrightarrow{v_3} = \overrightarrow{v_1} - (\overrightarrow{v_1} \cdot \overrightarrow{v_2}) \frac{\overrightarrow{v_2}}{|\overrightarrow{v_2}|}\)
+    \item[(B)] \(\overrightarrow{v_3} = \hat{k}\)
+    \item[(C)] \(\overrightarrow{v_3} = \overrightarrow{v_2} - (\overrightarrow{v_1} \cdot \overrightarrow{v_2}) \frac{\overrightarrow{v_1}}{|\overrightarrow{v_1}|}\)
+    \item[(D)] \(\overrightarrow{v_3} = \frac{\overrightarrow{v_1} \times \overrightarrow{v_2}}{|\overrightarrow{v_1} \times \overrightarrow{v_2}|}\)
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{The value of the integral \(I = \int_C ((x - y)dx + x^2dy)\), with C the boundary of the square \(0 \leq x \leq 2; 0 \leq y \leq 2\), is \_\_\_\_\_.}{2}
+
+\vspace{0.5cm}
+
+\questiona{Let \(\overrightarrow{v(t)}\) be a unit vector that is a function of the parameter \(t\). Then \(\overrightarrow{v} \cdot \frac{d\vec{v}}{dt} =\) \_\_\_\_\_.}{3}
+
+\vspace{0.5cm}
+
+\questiona{The eigenvalues \(\lambda_n\) and eigenfunctions \(u_n(x)\) of the Sturm-Liouville problem
+\[
+\frac{d^2 y}{dx^2} + k^2 \lambda y = 0, \quad 0 < x < 1;\quad y(0) = 0, \, y(1) = 0
+\]
+
+are given by:}{4}
+\begin{enumerate}
+    \item[(A)] \(\lambda_n = n^2\pi^2\); \(u_n(x) = \sin \lambda_n x, \, n = 0, \pm 1, \pm 2, \cdots, \infty\)
+    \item[(B)] \(\lambda_n = n^2\pi^2/k^2\); \(u_n(x) = \sin kn\pi x, \, n = 0, \pm 1, \pm 2, \cdots, \infty\)
+    \item[(C)] \(\lambda_n = n^2\pi^2/k^2\); \(u_n(x) = \sin n\pi x, \, n = 0, \pm 1, \pm 2, \cdots, \infty\)
+    \item[(D)] \(\lambda_n = n^2\pi^2\); \(u_n(x) = \sin n\pi x, \, n = 0, \pm 1, \pm 2, \cdots, \infty\)
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{3-point Gaussian integration formula is given by:
+\[\int_{-1}^{1} f(x) dx \approx \sum_{j=1}^{3} A_j f(x_j)\]
+with \( x_1 = 0, x_2 = -x_3 = -\sqrt{\frac{3}{5}} \), \( A_1 = \frac{8}{9}, A_2 = A_3 = \frac{5}{9} \). This formula exactly integrates}{5}
+\begin{enumerate}
+    \item[(A)] \( f(x) = 5 - x^7 \)
+    \item[(B)] \( f(x) = 2 + 3x + 6x^4 \)
+    \item[(C)] \( f(x) = 13 + 6x^3 + x^6 \)
+    \item[(D)] \( f(x) = e^{-x^2} \)
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{Which one of the following statements is NOT true}{6}
+\begin{enumerate}
+    \item[(A)] The pitching moment of any airfoil at any angle of attack is always zero at the center of pressure
+    \item[(B)] The pitching moment of any airfoil at any angle of attack is always zero at the aerodynamic center
+    \item[(C)] The center of pressure and aerodynamic center coincide for a symmetric airfoil
+    \item[(D)] The pitching moment about the aerodynamic center, for any airfoil, does not vary with angle of attack
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{Which one of the following statements is NOT true}{7}
+\begin{enumerate}
+    \item[(A)] Compared to a laminar boundary layer, a turbulent boundary layer is more desirable on a wing operating at large angle of attack
+    \item[(B)] The skin friction drag for a turbulent boundary layer is larger than that for a laminar boundary layer
+    \item[(C)] The location of transition from laminar to turbulent boundary layer depends only on the operating Reynolds number
+    \item[(D)] A separated flow does not necessarily lead to a turbulent boundary layer
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{A De Laval nozzle is to be designed for an exit Mach number of 1.5. The reservoir conditions are given as \( P_o = 1 \, \text{atm} \) (gage), \( T_o = 20^\circ C \), \( \gamma = 1.4 \). Assuming shock free flow in the nozzle, the exit absolute pressure (in atm) is \_\_\_\_\_.}{8}
+
+\vspace{0.5cm}
+
+\questiona{Consider a steady one dimensional flow of a perfect gas with heat transfer in a duct. The T-s diagram shows both the static and the stagnation conditions at two locations, A and B, in the duct. \( A_t \) and \( B_t \) denote stagnation conditions for states A and B, respectively. It is known that \( (\Delta T)_A = (\Delta T)_B \). \( M_A \) and \( M_B \) are the Mach numbers of the flow at locations A and B. 
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/9.png}
+\end{center}
+Which of the following statements is true about the flow?}{9}
+\begin{enumerate}
+    \item[(A)] Flow is subsonic and \( M_A < M_B \)
+    \item[(B)] Flow is supersonic and \( M_A > M_B \)
+    \item[(C)] Flow is subsonic and \( M_A > M_B \)
+    \item[(D)] Flow is supersonic and \( M_A < M_B \)
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{To ensure only the longitudinal static stability (and not the condition for equilibrium) of a low speed aircraft, the aircraft components must be designed to satisfy which one of the following conditions:}{10}
+\begin{enumerate}
+    \item[(A)] \[ \frac{\partial c_m}{\partial \alpha} < 0 \] and \[ C_{m0} > 0 \]
+    \item[(B)] \[ \frac{\partial c_m}{\partial \alpha} < 0 \]
+    \item[(C)] \[ \frac{\partial c_m}{\partial \alpha_L} < 0 \] and \[ C_{m0} < 0 \]
+    \item[(D)] \[ \frac{\partial c_m}{\partial \alpha_L} = 0.0 \]
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{Which of the following statement(s) is/are true about the shear centre of a cross-section:  
+P: It is that point in the cross-section through which shear loads produce no twisting.  
+Q: This point is also the centre of twist of sections subjected to pure torsion.  
+R: The normal stress at this point is always zero.}{11}
+\begin{enumerate}
+    \item[(A)] P, Q and R  
+    \item[(B)] P only  
+    \item[(C)] P and Q only  
+    \item[(D)] P and R only
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{Let $\overline{N}_m$ and $\overline{N}_0$ be respectively the non-dimensional locations of the stick-fixed maneuver point and stick-fixed neutral point of a low speed conventional aircraft. These distances are measured with respect to the nose of the fuselage. The numerical value of $\overline{N}_m$-$\overline{N}_0$}{12}
+\begin{enumerate}
+    \item[(A)] will always be negative  
+    \item[(B)] will always be positive  
+    \item[(C)] will always be zero  
+    \item[(D)] can have any value depending on the location of the center of gravity of the aircraft
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{The phenomenon of rudder lock in conventional low speed aircraft is primarily due to}{13}
+\begin{enumerate}
+    \item[(A)] large value of directional derivative, $C_{n\beta}$  
+    \item[(B)] the sidewash due to fuselage on the vertical stabilizer  
+    \item[(C)] the tendency of rudder to float rapidly at high angles of side-slip  
+    \item[(D)] the sidewash due to wing on the vertical stabilizer
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{The period of revolution of earth about the sun is 365.256 days, approximately. The semi-major axis of the earth's orbit is close to $1.4953 \times 10^{11}$ m. The semi-major axis of the orbit of Mars is $2.2783 \times 10^{11}$ m. The period of revolution of Mars, about the sun, is \_\_\_\_\_ Earth days.}{14}
+
+\vspace{0.5cm}
+
+\questiona{Consider a system consisting of certain amount of perfect gas enclosed in a cylinder fitted with a frictionless piston. This system can undergo following processes  
+\begin{enumerate}
+\item[(i)] Expansion with finite pressure difference with the surrounding.  
+\item[(ii)] Compression with infinitesimal pressure difference with the surrounding.  
+\item[(iii)] Heat transfer with finite temperature difference with the reservoir.  
+\item[(iv)] Heat transfer with infinitesimal temperature difference with the reservoir.
+\end{enumerate}
+
+Out of these which processes are reversible?}{15}
+\begin{enumerate}
+    \item[(A)] (i) and (iii)  
+    \item[(B)] (i) and (iv)  
+    \item[(C)] (ii) and (iii)  
+    \item[(D)] (ii) and (iv)
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{Among the following engines, which one is expected to have the maximum Specific Impulse?}{16}
+\begin{enumerate}
+    \item[(A)] Cryogenic Rocket
+    \item[(B)] Solid Propellant Rocket
+    \item[(C)] Liquid Propellant Rocket
+    \item[(D)] SCRAM Jet
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{The maximum gas flow rate that can be handled by a multistage axial compressor at a given rotational speed is dictated by}{17}
+\begin{enumerate}
+    \item[(A)] Compressor Surge
+    \item[(B)] Rotating Stall
+    \item[(C)] Choking
+    \item[(D)] Optimum Design Pressure Ratio
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{For a turbine stage, which one of the following losses occurs due to the turning of the wall boundary layer through an angle due to curved surface?}{18}
+\begin{enumerate}
+    \item[(A)] Profile loss
+    \item[(B)] Annulus loss
+    \item[(C)] Tip clearance loss
+    \item[(D)] Secondary flow loss
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{In the vane-less space between the impeller and the diffuser vanes in a Centrifugal Compressor, the angular momentum varies in the following manner in the radial direction}{19}
+\begin{enumerate}
+    \item[(A)] Increases
+    \item[(B)] Remains constant
+    \item[(C)] Decreases
+    \item[(D)] First increases and then decreases
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{Which of the following statements about the neutral axis of a beam with unsymmetrical cross section is true:}{20}
+\begin{enumerate}
+    \item[(A)] The product of second moment of area about the neutral axis is always zero.
+    \item[(B)] The normal stress along the neutral axis is always zero.
+    \item[(C)] The shear stress along the neutral axis is always zero.
+    \item[(D)] The product of second moment of area about the neutral axis and the normal stress about the neutral axis are always zero.
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{Assuming that the aircraft is flying straight, the top spar cap/flange of a wing is most likely to fail in:}{21}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/21.png}
+\end{center}
+\begin{enumerate}
+    \item[(A)] Yielding
+    \item[(B)] Buckling
+    \item[(C)] Crushing
+    \item[(D)] Creep
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{A 2-DOF undamped spring-mass system with two masses and two springs has natural frequencies $\omega_1 = 0.79\,\text{rad/s}$ and $\omega_2 = 1.538\,\text{rad/s}$. The mode shapes for the system are given by $\phi_1 = [0.732 \, 1]^{\text{T}}$ and $\phi_2 = [-2.73 \, 1]^{\text{T}}$. If the first mass is displaced by 1 cm, the minimum displacement in cm to be given to the second mass to make the system vibrate in first mode alone is \_\_\_\_\_.}{22}
+
+\vspace{0.5cm}
+
+\questiona{An aircraft landing gear can be idealized as a single degree of freedom spring-mass-damper system. The desirable damping characteristics of such a system is:}{23}
+\begin{enumerate}
+    \item[(A)] Under damped
+    \item[(B)] Over damped
+    \item[(C)] Critically damped
+    \item[(D)] Undamped
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questiona{A single degree of freedom spring-mass system of natural frequency 5 Hz is modified in the following manners:
+Case 1: Viscous damping with damping ratio $\zeta = 0.2$ is introduced in parallel to the spring.
+Case 2: The original undamped spring-mass system is moved to a surface with coefficient of friction, $\mu = 0.01$.
+The ratio of the damped natural frequency for the cases 1 and 2 is \_\_\_\_\_.}{24}
+
+\vspace{0.5cm}
+
+\questiona{Which of the following statements about the compatibility equations are true:
+P. Strain compatibility equations must be satisfied in the solution of three-dimensional problems in elasticity.
+Q. Six strains are defined in terms of three displacement functions and can have arbitrary values.
+R. Compatibility equations are an expression of the continuity of displacements.}{25}
+\begin{enumerate}
+    \item[(A)] P and Q
+    \item[(B)] Q and R
+    \item[(C)] P and R
+    \item[(D)] P, Q and R
+\end{enumerate}
+
+\vspace{0.5cm}
+
+% Technical Section (2-mark questions)
+\questionb{Matrix $[A] = 
+\begin{bmatrix}
+2 & 0 & 2 \\
+3 & 2 & 7 \\ 
+3 & 1 & 5
+\end{bmatrix}$ and vector $[b] = 
+\begin{cases}
+4 \\
+4 \\
+5
+\end{cases}$ are given. If vector $[x]$ is the solution to the system of equations $[A][x] = [b]$, which of the following is true for $[x]$:}{26}
+\begin{enumerate}
+    \item[(A)] Solution does not exist
+    \item[(B)] Infinite solutions exist
+    \item[(C)] Unique solution exists
+    \item[(D)] Five possible solutions exist
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questionb{Let matrix $[A] = \begin{bmatrix} 2 & -6 \\ 0 & 2 \end{bmatrix}$. Then for any non-trivial vector $\{x\} = \begin{cases} x_1 \\ x_2 \end{cases}$, which of the following is true for the value of $K = \{x\}^T[A]\{x\}$:}{27}
+\begin{enumerate}
+    \item[(A)] K is always less than zero
+    \item[(B)] K is always greater than zero
+    \item[(C)] K is non-negative
+    \item[(D)] K can be anything
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questionb{Consider the initial value problem:
+\[
+\frac{d^2 y}{dt^2} + 4 \frac{dy}{dt} + 6y = f(t); \quad y(0) = 2, \left( \frac{dy}{dt} \right)_{t=0} = 1
+\]
+If $Y(s) = \int_0^\infty y(t)e^{-st} dt$ and $F(s) = \int_0^\infty f(t)e^{-st} dt$ are the Laplace transforms of $y(t)$ and $f(t)$ respectively, then $Y(s)$ is given by:}{28}
+\begin{enumerate}
+    \item[(A)] $\frac{F(s)}{(s^2+4s+6)}$
+    \item[(B)] $\frac{F(s)+2s+9}{(s^2+4s+6)}$
+    \item[(C)] $\frac{F(s)}{(-s^2+4s+6)}$
+    \item[(D)] $\frac{F(s)-2s+9}{(s^2+4s+6)}$
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questionb{Let $u(x,t)$ denote the displacement of a point on a rod. The displacement satisfies the following equation of motion:
+\[
+\frac{\partial^2 u}{\partial t^2} - 25 \frac{\partial^2 u}{\partial x^2} = 0, \quad 0 < x < 1
+\]
+with $u(x,0) = 0.01 \sin(10\pi x), \frac{\partial u}{\partial t}(x,0) = 0; \quad u(0,t) = 0, \quad u(1,t) = 0$. The value of $u(0.25,1)$ is \_\_\_\_\_.}{29}
+
+\vspace{0.5cm}
+
+\questionb{The equation $ x^2 \frac{d^2 y}{dx^2} + 5x \frac{dy}{dx} + 4y = 0 $ has a solution $y(x)$ that is:}{30}
+\begin{enumerate}
+    \item[(A)] A polynomial in $x$
+    \item[(B)] Finite series in terms of non-integer fractional powers of $x$
+    \item[(C)] Consists of negative integer powers of $x$ and logarithmic function of $x$
+    \item[(D)] Consists of exponential functions of $x$
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questionb{Consider a straight wing with rectangular planform of aspect ratio 10 and with a NACA 0012 airfoil. The span effectiveness factor for this wing is 0.95. Assume the flow to be incompressible and governed by thin airfoil theory. The lift coefficient of this wing, at an angle of attack of 6 deg, is \_\_\_\_\_.}{31}
+
+\vspace{0.5cm}
+
+\questionb{Consider an incompressible flow over a flat plate with the following approximation to the velocity profile:
+\[
+\frac{u(y)}{U} = 
+\begin{cases} 
+\frac{y}{\delta} \text{ for } y \leq \delta \\ 
+1 \text{ for } y > \delta 
+\end{cases}
+\]
+where $\delta$ is the boundary layer thickness and U the free-stream speed. The normalized momentum thickness ($\theta / \delta$) for this profile is \_\_\_\_\_.}{32}
+
+\vspace{0.5cm}
+
+\questionb{An idealized velocity field is given by $ \vec{V} = 4tx\hat{i} - 2t^2y\hat{j} + 4xz\hat{k} $. At point (-1,1,0) and at t = 1, the magnitude of the material acceleration vector of the fluid element is \_\_\_\_\_.}{33}
+
+\vspace{0.5cm}
+
+\questionb{A trace from the schlieren photograph of the flow around a corner reveals the edges of the expansion fan as shown below. The leading and trailing edges of the expansion fan make the angles as shown. Assuming $ \gamma = 1.4 $, the angle of the expansion fan (in degrees) is \_\_\_\_\_.}{34}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/34.png}
+\end{center}
+
+\vspace{0.2cm}
+Prandtl Meyer function is given by
+\[
+v(M) = \sqrt{\frac{\gamma + 1}{\gamma - 1}} \tan^{-1} \sqrt{\frac{\gamma - 1}{\gamma + 1}(M^2 - 1)} - \tan^{-1}\sqrt{(M^2 - 1)}
+\]
+
+\vspace{0.5cm}
+
+\questionb{A strong normal shock wave, with a pressure ratio of 29 across it, is travelling into stationary air ($ \gamma = 1.4 $) at $ T = 280 \text{ K} $ in a straight duct (see figure). The magnitude of the velocity of the air induced behind the shock wave is \_\_\_\_\_ m/s.}{35}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/35.png}
+\end{center}
+
+\vspace{0.2cm}
+Gas constant = 287 J/kg.K; Shock wave relations:
+\[
+\frac{p_2}{p_1} = 1 + \frac{2\gamma}{\gamma + 1}(M^2 - 1); \quad
+\frac{\rho_2}{\rho_1} = \frac{(\gamma + 1)M^2}{(\gamma - 1)M^2 + 2}
+\]
+
+\vspace{0.5cm}
+
+\questionb{In the figure below, water exits from a nozzle into atmospheric pressure of 101 kPa. If the exit velocity is $V_2 = 8 \text{ m/s}$ and friction is neglected, the magnitude of the \textit{axial} force on the flange at location 1 required to keep the nozzle attached to the pipe is \_\_\_\_\_ N.}{36}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/36.png}
+\end{center}
+
+\vspace{0.5cm}
+
+\questionb{A football, meant to be thrown at 100 km/h in sea level air ($\rho=1.22 \text{ kg/m}^3$, $\mu=1.78 \times 10^{-5} \text{ N-s/m}^2$), is to be tested using a one-quarter scale model in a water tunnel ($\rho=1000 \text{ kg/m}^3$, $\mu=10^{-3} \text{ N-s/m}^2$). For dynamic similarity, the ratio of the model force to the prototype force is \_\_\_\_\_.}{37}
+
+\vspace{0.5cm}
+
+\questionb{An aircraft model was tested in a low speed wind-tunnel (Reynolds number $= 2 \times 10^6$ based on wing mean chord). The variation of pitching moment coefficient ($C_m$) with angle of attack ($\alpha$) for two elevator deflections ($\delta_e$) as recorded during this test is presented below.}{38}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/38.png}
+\end{center}
+Based on the result presented in the figure above, the value of elevator control power ($C_{m_{\delta_e}}$) in per radian will be \_\_\_\_\_.
+
+\vspace{0.5cm}
+
+\questionb{A pilot was flying a single engine propeller aircraft and maintaining a steady level flight at a lift coefficient, $C_L = 0.5$ at an altitude of 500 m. Due to some emergency, at the same altitude (500 m), the pilot had to fully deploy the landing gear. If the pilot wants to maintain steady level flight at the same $C_L = 0.5$ and at the same altitude, which of the following control actions should the pilot undertake:}{39}
+\begin{enumerate}
+    \item[(A)] move the elevator up, and decrease the throttle
+    \item[(B)] move the elevator up, and increase the throttle
+    \item[(C)] move the elevator down, and decrease the throttle
+    \item[(D)] move the elevator down, and increase the throttle
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questionb{A conventional low speed aircraft had the following aerodynamic characteristics: $C_{D_0} = 0.020$, $e = 1.0$ (Oswald efficiency). The aircraft was flown to maintain a steady level flight and for minimum thrust required, at a lift coefficient of $C_L = 0.8$. The numerical value of the aspect ratio of the wing is \_\_\_\_\_.}{40}
+
+\vspace{0.5cm}
+
+\questionb{A batch of aluminium alloy yields in uniaxial tension at the stress of 330 MN/m². If this material is subjected to the following state of stress:
+\[
+\sigma_x = 140 \text{ MN/m}^2, \sigma_y = -70 \text{ MN/m}^2, \sigma_z = 0, \tau_{xy} = x \text{ MN/m}^2, \tau_{yz} = 0, \tau_{zx} = 0.
+\]
+The value of $x$ that would result in yielding according to the Von Mises failure criterion is \_\_\_\_\_.}{41}
+
+\vspace{0.5cm}
+
+\questionb{The roots obtained by solving longitudinal characteristic equations of motion for a statically stable aircraft are given below:
+\[
+\lambda_{1,2} = -0.02 \pm 0.30i, \lambda_{3,4} = -2.00 \pm 2.50i, \text{ where } i = \sqrt{-1}
+\]
+The undamped short-period longitudinal natural frequency (radians/sec) and damping ratio, in that order, are close to}{42}
+\begin{enumerate}
+    \item[(A)] 3.40, 0.73
+    \item[(B)] 3.36, 0.65
+    \item[(C)] 3.83, 0.56
+    \item[(D)] 3.20, 0.63
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questionb{An aircraft is to be designed to ensure that it has enough excess power to achieve steady climb at flight path angle, $\gamma = 10$ degrees, maintaining $\frac{C_L}{C_D} = 10.0$. The numerical value of the thrust to weight ratio of the complete aircraft to meet the above requirement under standard atmospheric condition will be \_\_\_\_\_.}{43}
+
+\vspace{0.5cm}
+
+\questionb{A conventional aircraft was analyzed to estimate the contribution of wing towards $C_{m_0}$ ($C_m$ at $\alpha = 0$) of the whole aircraft. The wing was installed with zero setting angle along the fuselage reference line. Further, the wing was laid such that $\bar{X}_{ac,w} = 0.3$, and $\bar{X}_{cg,aircraft} = 0.4$. $\bar{X}_{ac,w}$ and $\bar{X}_{cg,aircraft}$ are the non-dimensional distances, from the leading edge of the wing, of the aerodynamic center of the wing and center of gravity of the aircraft respectively. The wing had the following aerodynamic characteristics:
+$C_{L_0} = 0.20$, and $C_{mac,wing} = -0.02$. 
+
+The numerical value of $C_{m_0,w}$ (contribution of the wing to $C_{m_0}$) about the CG of the aircraft is \_\_\_\_\_.}{44}
+
+\vspace{0.5cm}
+
+\questionb{In a combustor, gaseous Octane (C$_8$H$_{18}$) and air are to be burned in stoichiometric proportions. If the required flowrate of air is 1 kg/s, what should be the corresponding flow rate of Octane?}{45}
+\begin{enumerate}
+    \item[(A)] 0.066 kg/s
+    \item[(B)] 15.15 kg/s
+    \item[(C)] 0.16 kg/s
+    \item[(D)] 6.25 kg/s
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\questionb{The given diagram represents the velocity triangles at the leading edge (1) and trailing edge (2) at the mean radius of a single stage axial compressor rotor. The stage efficiency of the compressor is 0.8. The stagnation temperature of air entering the stage is 298 K and the specific heat at constant pressure for air is 1.005 kJ/kgK. The ratio of specific heats for air is 1.4. Considering actual work in the rotor is equal to the ideal work, the pressure ratio for the stage is equal to \_\_\_\_\_.}{46}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/46.png}
+\end{center}
+
+\vspace{0.5cm}
+
+\questionb{An aircraft with a turbojet engine, having an inlet area of 1 m$^2$, is flying at 270 m/s at an altitude where the atmospheric pressure is equal to 0.9 bar and the ambient temperature is equal to 290 K. The stagnation pressure and temperature at the exit of the turbine are equal to 1.6 bar and 774 K respectively. The specific heat at constant pressure of the burned gases is equal to 1.147 kJ/kgK and the ratio of specific heats is equal to 1.33. Considering ideal expansion in the nozzle with no losses, the specific thrust produced by the engine is \_\_\_\_\_ Ns/kg.}{47}
+
+\vspace{0.5cm}
+
+\questionb{Air, at 450 K stagnation temperature and at a rate of 50 kg/s, enters the combustor of a turbofan engine and is burned with 1 kg/s of Aviation Kerosene (Heating value 44 MJ/kg). The specific heat at constant pressure for the incoming air and the burned products are 1.005 kJ/kgK and 1.147 kJ/kgK respectively. Considering 100\% burner efficiency, the stagnation temperature at the exit of the combustor is equal to \_\_\_\_\_ K.}{48}
+
+\vspace{0.5cm}
+
+\questionb{A single stage chemical rocket, having an initial mass of 10,000 kg and specific impulse of 450 s, is launched from the surface of the earth and has to reach the escape velocity (11 km/s) at burn out. Consider $g_e = 9.8$ m/s$^2$. If the atmospheric drag and the effect of gravity are to be neglected, the mass of propellant to be carried by the rocket is equal to \_\_\_\_\_ kg.}{49}
+
+\vspace{0.5cm}
+
+\questionb{A centrifugal compressor requires 1800 kW of power to compress 10 kg/s of air. Consider the whirl velocity component is equal to the impeller speed (i.e., no slip) and no losses in the impeller. If the impeller has to rotate at 1900 rad/s, the diameter of the impeller is to be \_\_\_\_\_ m.}{50}
+
+\vspace{0.5cm}
+
+\questionb{An aircraft wing is idealized as a cantilever beam of constant width and length $l$ with a tip mass of weight $W$ (Newtons) and has a uniformly distributed loading of $q_0$ (Newtons/m) as shown in the figure. Flexural rigidity = $EI$ and $q_0 l = 10 W$.}{51}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/51.png}
+\end{center}
+The upward deflection of the tip of the aircraft wing under the given loading can be expressed as:
+\[
+\delta = k \frac{W l^3}{EI}
+\]
+The value of $k$ is \_\_\_\_\_.
+
+\vspace{0.5cm}
+
+\questionb{For the state of plane stress shown in the figure, the minimum principal stress is $-7$ MN/m$^2$. The normal stress $\sigma_x$ in MN/m$^2$ is equal to \_\_\_\_\_.}{52}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/52.png}
+\end{center}
+
+\vspace{0.5cm}
+
+\questionb{The maximum normal stress in MN/m$^2$ for the thin walled beam of square cross section of outer dimension 120 mm $\times$ 120 mm and wall thickness 1 mm under the action of moment $M_0=96$ Nm as shown in the figure is \_\_\_\_\_.}{53}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/53.png}
+\end{center}
+
+\vspace{0.5cm}
+
+\questionb{The idealized cross section of a thin-walled wing box structure shown in the figure is subjected to an anticlockwise torque of 10 kNm. The corresponding shear-flow distribution under this loading condition is shown in the figure. The area of each cell is $A_1 = 300 \times 10^3$ mm$^2$ and $A_2 = 250 \times 10^3$ mm$^2$. The ratio of the unknowns $\frac{x}{y}$ is given by \_\_\_\_\_.}{54}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/54.png}
+\end{center}
+
+\vspace{0.5cm}
+
+\questionb{The natural frequency of the system suspended by two identical springs of stiffness $k$ as shown in the figure is given by $\omega_n = a \sqrt{\frac{k}{m}}$ for small displacement. Both the springs make an angle of $45^\circ$ with the horizontal. The value of $a$ is \_\_\_\_\_.}{55}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/55.png}
+\end{center}
+
+\vspace{5 cm}
+\begin{center}
+\textbf{END OF THE QUESTION PAPER}
+	\rule{\textwidth}{0.5pt}
+\end{center}
+
+\end{document}
